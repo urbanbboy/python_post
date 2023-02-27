@@ -9,13 +9,8 @@
 <div>
     <ul>
         {% for i in post %}
-            <li>
-                <h2>{{ i.title }}</h2>
-                <p>{{ i.description }}</p>
-                <img src="{{ i.image.url }}" alt="" width="100" height="100">
-                <p>{{ i.created_date }}</p>
-                <p>{{ i.updated_date }}</p>
-            </li>
+            <h1>{{i.title}}</h1>
+        <button><a href="/posts/{{i.id}}">Подробнее</a></button>
         {% endfor %}
     </ul>
 </div>
